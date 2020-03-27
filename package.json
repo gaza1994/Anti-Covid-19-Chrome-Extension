@@ -1,7 +1,14 @@
 {
   "name": "anti-covid19",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.1.0",
+  "description": "Hide social media posts on facebook and twitter regarding covid 19",
+  "author": "Gareth Johnstone <me@garethjohnstone.co.uk> (https://garethjohnstone.co.uk/)",
+  "license": "ISC",
+  "homepage": "https://garethjohnstone.co.uk/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gaza1994/Anti-Covid-19-Chrome-Extension.git"
+  },
   "scripts": {
     "lint": "tslint --project . --fix",
     "build:contentscript-background": "NODE_ENV=production webpack --config webpack.config.js",
@@ -12,8 +19,6 @@
     "prebuild": "npm run clean && npm run lint",
     "predev": "npm run clean && npm run lint"
   },
-  "author": "Gareth Johnstone",
-  "license": "ISC",
   "devDependencies": {
     "@types/chrome": "0.0.102",
     "@types/node": "^12.12.31",
