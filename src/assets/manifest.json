@@ -1,0 +1,30 @@
+{
+    "manifest_version": 2,
+    "name": "Anti COVID19",
+    "description": "Hide social media posts regarding COVID 19",
+    "version": "1.1",
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_icon": "icon.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.twitter.com/*",
+                "*://twitter.com/*",
+                "*://*.facebook.com/*",
+                "*://facebook.com/*"
+            ],
+            "js": [
+                "contentscript.js"
+            ]
+        }
+    ],
+    "permissions": [
+        "storage",
+        "*://*.twitter.com/*",
+        "*://twitter.com/*",
+        "*://*.facebook.com/*",
+        "*://facebook.com/*"    
+    ]
+}
